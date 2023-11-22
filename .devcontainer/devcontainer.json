@@ -1,0 +1,29 @@
+{
+    "name": "C# (.NET)",
+    "image": "mcr.microsoft.com/dotnet/sdk:8.0",
+    "features": {
+        "ghcr.io/devcontainers/features/powershell:1": {
+            "version": "latest"
+        }
+    }
+    // Configure tool-specific properties.
+    ,
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csdevkit",
+                "ms-dotnettools.blazorwasm-companion"
+            ]
+        }
+    },
+    "forwardPorts": [
+        5189,
+        7269,
+        5000
+    ],
+    "portsAttributes": {
+        "7269": {
+            "protocol": "https"
+        }
+    }
+}
